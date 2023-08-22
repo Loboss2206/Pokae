@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"capacités","c":"Attaque","l":"Attaque()","u":"%3Cinit%3E()"},{"p":"capacités","c":"Attaque","l":"calculeDommage(IPokemon, IPokemon)","u":"calculeDommage(interfaces.IPokemon,interfaces.IPokemon)"},{"p":"capacités","c":"Attaque","l":"utilise()"}];updateSearchResults();
