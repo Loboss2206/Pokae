@@ -1,65 +1,60 @@
-# Gardevoir GANG
+# Pokae Gardevoir GANG
 
-## Membres de l'équipe
-  - Logan Brunet
-  - Sacha Hassan
-  - Lucas Schiavetti
-  - Logan Laporte
-  - Arthur Bailleul
- 
-## Organisation
+Ce projet a été réalisé dans le cadre du cours SAE201 lors de mon deuxième semestre de Bachelor en Informatique. \
+L'objectif de ce projet était de créer une simulation de combat Pokémon jouable dans la console en utilisant le langage de programmation Java. \
+Ce projet est ainsi une reproduction simplifiée d'un combat Pokémon, où vous pourrez choisir de jouer entre différents types de joueurs, que ce soit des joueurs humains ou des IA (joueurs controlés par l'ordinateur).
 
-Pour la réalisation de ce projet en groupe nous avons décidé de nous diviser les tâches pour être le plus performant possible et respecter les contraintes de temps imposées. En addition à cela nous nous aidions les uns les autres sur certaines tâches pour éviter que quelqu’un soit bloqué trop longtemps sur un problème. Ainsi Logan.b s’est principalement occupé du code, Lucas lui s’est occupé du code et de la doc, Sacha s’est occupé du code et de la JavaDoc, Logan.l s’est occupé du code et Arthur s’est occupé du code et des tests unitaires avec JUnit.
+## 💻 Instructions pour jouer une partie
 
-## Instructions
+Pour jouer un combat, suivez ces étapes simples :
 
+### Joueur Humain
 
-### Combat entre 2 humains
-Pour jouer un combat entre 2 dresseurs, il faut créer 2 dresseursHumains comme ceci :
+1. Ouvrez la classe principale du projet dans le package "src/testPokae".
+2. Créez un objet DresseurHumain avec les commandes ci-dessous.
 
+```java
 DresseurHumain dresseurHumain1 = new DresseurHumain();
 dresseurHumain1.setUpDresseur();
+```
 
-DresseurHumain dresseurHumain2 = new DresseurHumain();
-dresseurHumain2.setUpDresseur();
+Répétez ces étapes pour créer un deuxième joueur humain, dresseurHumain2.
 
+### Joueur IA
 
-puis il faut créer le combat et le lancer : 
+1. Ouvrez la classe principale du projet dans le package "src/testPokae".
+2. Créez un objet DresseurIA avec les commandes ci-dessous.
 
-Combat combatTest = new Combat(dresseurHumain1,dresseurHumain2);
-combatTest.commence();
-
-
-### Combat entre 2 IA
-Pour jouer un combat entre 2 IA, il faut créer 2 dresseursIA comme ceci :
-
+```java
 DresseurIA dresseurIA1 = new DresseurIA();
 dresseurIA1.setUpDresseur();
+```
 
-DresseurIA dresseurIA2 = new DresseurIA();
-dresseurIA2.setUpDresseur();
+Répétez ces étapes pour créer un deuxième joueur IA, dresseurIA2.
 
+### Lancer le Combat
 
-puis il faut créer le combat et le lancer : 
+1. Créez un objet Combat en utilisant les joueurs que vous avez créés :
 
-Combat combatTest = new Combat(dresseurIA1,dresseurIA2);
+```java
+Combat combatTest = new Combat(dresseurHumain1, dresseurHumain2);  // Pour un combat entre deux joueurs humains
+// ou
+Combat combatTest = new Combat(dresseurIA1, dresseurIA2);  // Pour un combat entre deux joueurs IA
+// ou
+Combat combatTest = new Combat(dresseurIA1, dresseurHumain1);  // Pour un combat entre un joueur IA et un joueur humain
+```
+
+2. Lancez le combat :
+
+```java
 combatTest.commence();
+```
 
+\
+C'est aussi simple que ça ! Choisissez le type de combat que vous souhaitez simuler en ajustant les types de joueurs que vous créez.
 
-### Combat entre 1 IA et 1 humain
-Pour jouer un combat entre 1 IA et 1 humain, il faut créer un dresseurHumain et un dresseurIA :
+## ✏️ Comment contribuer ?
 
-DresseurIA dresseurIA1 = new DresseurIA();
-dresseurIA1.setUpDresseur();
+Si vous êtes enthousiasmé par ce projet et souhaitez contribuer, veuillez consulter le [guide de contribution](https://github.com/Loboss2206/Pokae/blob/main/CONTRIBUTING.md) pour plus d'informations.
 
-DresseurHumain dresseurHumain1 = new DresseurHumain();
-dresseurHumain1.setUpDresseur();
-
-
-puis il faut créer le combat et le lancer : 
-
-Combat combatTest = new Combat(dresseurIA1,dresseurHumain1);
-combatTest.commence();
-
-## [Lien Contributing](https://github.com/IUT-DEPT-INFO-UCA/pokae-gardevoir-gang/blob/main/CONTRIBUTING.md)
-
+Ce projet a été créé avec passion par l'équipe Pokae Gardevoir GANG du département d'informatique de l'IUT de l'Université Côte d'Azur. Nous espérons que vous apprécierez jouer avec !
