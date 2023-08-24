@@ -1,7 +1,7 @@
 # Pokae Gardevoir GANG
 
-Ce projet a été réalisé dans le cadre du cours SAE201 lors de mon deuxième semestre de Bachelor en Informatique. \
-L'objectif de ce projet était de créer une simulation de combat Pokémon jouable dans la console en utilisant le langage de programmation Java. \
+Ce projet a été réalisé dans le cadre du cours SAE201 lors de mon deuxième semestre de BUT Informatique. \
+L'objectif de ce projet était de créer une simulation de combat Pokémon jouable dans la console en utilisant Java. \
 Ce projet est ainsi une reproduction simplifiée d'un combat Pokémon, où vous pourrez choisir de jouer entre différents types de joueurs, que ce soit des joueurs humains ou des IA (joueurs controlés par l'ordinateur).
 
 ## 💻 Instructions pour jouer une partie
