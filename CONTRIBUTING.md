@@ -1,6 +1,6 @@
 # ✏️ Comment Participer
 
-Si vous souhaitez apporter votre contribution au projet MangAttack, voici comment vous pouvez vous impliquer :
+Si vous souhaitez apporter votre contribution au projet Pokae, voici comment vous pouvez vous impliquer :
 
 1. **Cloner le Dépôt :** Faites une copie du dépôt sur votre propre ordinateur.
 2. **Créer une Nouvelle Branche :** Avant de commencer vos modifications, créez une nouvelle branche pour votre travail.
